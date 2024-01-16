@@ -18,3 +18,6 @@ public class Ex01_HelloWorld {
 		System.out.println();		// Ctrl + / : 문장을 커멘트 처리(토글)
 	}
 }
+
+// src	source		JAVA 파일(Hello.java)
+// bin	binary		실행 파일(Hello.class) - binary

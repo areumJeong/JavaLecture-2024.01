@@ -28,8 +28,11 @@ public class Ex03_TypeConversion {
 		// 연산에서의 자동 타입변환 
 		long k = a + b + c;		// short + int + long
 		double l = d + e;		// float + double
-		double m = a / b;		// int / int ==> double
+		double m = a / b;		// int / int ==> 값 계산 후  ==> truncate후 정수 ==> double로 변환
 		System.out.println("k: " + k + ", l: " + l + ", m: " + m);
 	}
 	
 }
+		// 		가만히	double에 할당
+		//	3/4		0		0.75
+		//	3/2		1		1.5
