@@ -23,7 +23,7 @@ public class Ex03_FullAge {
 		
 		int age;
 		if (month > bMonth)
-			age = year = bYear;
+			age = year - bYear;
 		else if (month < bMonth)
 			age = year - bYear - 1;
 		else {
@@ -40,7 +40,7 @@ public class Ex03_FullAge {
 			age2--;
 		System.out.println("만나이: " + age2);
 		
-		int age3 = (month < bMonth || (month == bMonth && day < bDay)) ?
+		int age3 = (month < bMonth || (month == bMonth && day < bDay)) ? 
 					year - bYear - 1 : year - bYear;
 		System.out.println("만나이: " + age3);
 	}

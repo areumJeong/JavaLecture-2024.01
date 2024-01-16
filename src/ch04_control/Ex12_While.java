@@ -28,7 +28,7 @@ public class Ex12_While {
 		do {
 			int dice = 1 + (int) (6 * Math.random());
 			System.out.print(dice + " ");
-			diceSum += dice;
+			diceSum += dice; 
 		} while (diceSum <= 15);
 		System.out.println(); System.out.println(diceSum);
 	}
