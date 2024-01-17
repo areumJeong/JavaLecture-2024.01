@@ -3,6 +3,7 @@ package ch04_control;
 public class Q05 {
 
 	public static void main(String[] args) {
+		int count = 0;
 		for (int i = 0; i < 5; i++) {
 			for (int k = 0; k < 3; k++) {
 				if (i == 2)
