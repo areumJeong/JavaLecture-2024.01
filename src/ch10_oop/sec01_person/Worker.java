@@ -4,6 +4,6 @@ public class Worker extends Person {
 	int workerId;
 	
 	void work() {
-		System.out.println("열심히 일을 합니다.");
+		System.out.println(name + " 이/가 일을 합니다.");
 	}
 }
