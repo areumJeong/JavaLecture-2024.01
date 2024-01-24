@@ -1,4 +1,4 @@
-package ch17_collection.sec03_MemberArray;
+package ch17_collection.sec03_message;
 
 import java.time.LocalDateTime;
 
