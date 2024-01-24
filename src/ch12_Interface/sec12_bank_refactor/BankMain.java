@@ -32,7 +32,7 @@ public class BankMain {
 			case 6:
 				run = false; break;
 			default:
-				System.out.println("Warning: 1 ~ 5 사이의 숫자만 입력하세요.");
+				System.out.println("Warning: 1 ~ 6 사이의 숫자만 입력하세요.");
 			}
 		}
 		System.out.println("프로그램 종료");
