@@ -1,6 +1,5 @@
 package extra_crawling.sec01_human_edu;
 
-
 import java.io.IOException;
 import java.net.URLEncoder;
 import java.util.ArrayList;
