@@ -30,9 +30,9 @@ public class RoadAddrApi {
 		URL url = new URL(apiUrl);
 		br = new BufferedReader(new InputStreamReader(url.openStream(),"UTF-8"));
     	StringBuffer sb = new StringBuffer();
-    	String tempStr = null;
     	
-    	while(true){
+    	String tempStr = null;
+    	while(true) {
     		tempStr = br.readLine();
     		if(tempStr == null) 
     			break;
