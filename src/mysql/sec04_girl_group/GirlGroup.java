@@ -23,6 +23,13 @@ public class GirlGroup {
 		this.debut = debut;
 		this.hitSongId = hitSongId;
 	}
+	// List 할 경우 사용되는 생성자
+	public GirlGroup(int gid, String name, LocalDate debut, String hitSongTitle) {
+		this.gid = gid;
+		this.name = name;
+		this.debut = debut;
+		this.hitSongTitle = hitSongTitle;
+	}
 	public GirlGroup(int gid, String name, LocalDate debut, int hitSongId, String hitSongTitle) {
 		this.gid = gid;
 		this.name = name;
