@@ -15,8 +15,14 @@ public class Main {
 		System.out.println(gg);
 		System.out.println("=============================================");
 		
-		gg = new GirlGroup("뉴진스", LocalDate.parse("2022-07-22"), 117);
-		ggDao.insertGirlGroup(gg);
+//		gg = new GirlGroup("뉴진스", LocalDate.parse("2022-07-22"), 117);
+//		ggDao.insertGirlGroup(gg);
+		
+//		gg = ggDao.getGirlGroupByGid(1007);
+//		gg.setName("에프엑스");
+//		ggDao.updateGirlGroup(gg);
+		
+		ggDao.deleteGirlGroup(1013);
 		
 		List<GirlGroup> list = ggDao.getGirlGroupByDebut(2009, 2022);
 		list.forEach(x -> System.out.println(x));

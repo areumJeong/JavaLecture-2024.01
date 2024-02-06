@@ -126,7 +126,34 @@ public class GirlGroupDao {
 			e.printStackTrace();
 		}
 	}
-	
-	
+
+	public void updateGirlGroup(GirlGroup gg) {
+		String sql = "update girl_group set name=?, debut=?, hit_song_id=? where gid=?";
+		try {
+			PreparedStatement pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, gg.getName());
+			pstmt.setString(2, gg.getDebut().toString());
+			pstmt.setInt(3, gg.getHitSongId());
+			pstmt.setInt(4, gg.getGid());
+			
+			pstmt.executeUpdate();
+			pstmt.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void deleteGirlGroup(int gid) {
+		String sql = "delete from girl_group where gid=?";
+		try {
+			PreparedStatement pstmt = conn.prepareStatement(sql);
+			pstmt.setInt(1, gid);
+			
+			pstmt.executeUpdate();
+			pstmt.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 	
 }
