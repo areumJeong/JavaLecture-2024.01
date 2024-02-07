@@ -72,13 +72,14 @@ public class MessageMain {
 				messageService.deleteMessage(mid);
 				break;
 			case 6:
-				run = false; 
+				run = false;
 				break;
 			default:
 				System.out.println("Warning: 1 ~ 6 사이의 숫자만 입력하세요.");
 			}
 		}
 		System.out.println("프로그램 종료");
+		messageService.close();
 		scan.close();
 	}
 
