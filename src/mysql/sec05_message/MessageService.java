@@ -17,4 +17,6 @@ public interface MessageService {
 	
 	void deleteMessage(int mid);
 	
+	void close();
+	
 }
