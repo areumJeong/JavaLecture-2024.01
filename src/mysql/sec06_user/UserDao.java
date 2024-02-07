@@ -63,7 +63,7 @@ public class UserDao {
 	
 	public List<User> getUserList(int num, int offset) {
 		String sql = "select * from users where isDeleted=0"
-					+ " order by regDate desc limit ? offset ?";
+					+ " order by regDate desc, uid limit ? offset ?";
 		List<User> list = new ArrayList<User>();
 		try {
 			PreparedStatement pstmt = conn.prepareStatement(sql);
