@@ -120,7 +120,16 @@ public class BoardDao {
 	
 	// field 값은 view 또는 reply
 	public void increaseCount(String field, int bid) {
-		
+		String sql = "UPDATE board SET " + field + "Count=" + field + "Count+1 WHERE bid=?";
+		try {
+			PreparedStatement pstmt = conn.prepareStatement(sql);
+			pstmt.setInt(1, bid);
+			
+			pstmt.executeUpdate();
+			pstmt.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 }
